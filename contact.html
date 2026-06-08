@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Paul Varghese — web developer in Thrissur, Kerala. Send a message via the contact form or email paulvarghesetv@gmail.com.">
+  <meta name="keywords" content="Paul Varghese, contact, email, Thrissur, Kerala, web developer">
+  <meta name="author" content="Paul Varghese">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact | Paul Varghese — Web Developer">
+  <meta property="og:description" content="Get in touch with Paul Varghese. Based in Thrissur, Kerala. Email: paulvarghesetv@gmail.com">
+  <meta property="og:url" content="https://paulvarghese.dev/contact">
+  <meta property="og:locale" content="en_IN">
+
+  <title>Contact | Paul Varghese — Web Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="site-logo" aria-label="Paul Varghese — Home">Paul Varghese</a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav class="site-nav" id="main-nav" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <header class="page-banner">
+      <div class="container fade-in">
+        <span class="section-label">Get in Touch</span>
+        <h1>Contact Me</h1>
+        <p class="section-desc">Have a question or want to work together? Fill out the form below or reach me directly by email.</p>
+      </div>
+    </header>
+
+    <section class="section" aria-labelledby="contact-section-heading">
+      <div class="container contact-grid">
+        <aside class="contact-info-card fade-in" aria-label="Contact information">
+          <h2 id="contact-section-heading">Let's Connect</h2>
+          <p>I'm based in Thrissur, Kerala, and available for freelance work, collaborations, and internship opportunities. I'll do my best to respond within 48 hours.</p>
+
+          <address style="font-style: normal;">
+            <div class="contact-detail">
+              <div class="contact-detail-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <div>
+                <p class="contact-detail-label">Name</p>
+                <p class="contact-detail-value">Paul Varghese</p>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="contact-detail-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <p class="contact-detail-label">Email</p>
+                <p class="contact-detail-value">
+                  <a href="mailto:paulvarghesetv@gmail.com">paulvarghesetv@gmail.com</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="contact-detail-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div>
+                <p class="contact-detail-label">Location</p>
+                <p class="contact-detail-value">Thrissur, Kerala, India</p>
+              </div>
+            </div>
+          </address>
+        </aside>
+
+        <article class="fade-in" aria-labelledby="form-heading">
+          <h2 id="form-heading" class="section-title" style="margin-bottom: 1.5rem;">Send a Message</h2>
+
+          <div id="form-success" class="form-success" tabindex="-1">
+            Thank you for your message! I'll get back to you at the email address you provided.
+          </div>
+
+          <form id="contact-form" action="mailto:paulvarghesetv@gmail.com" method="post" enctype="text/plain" novalidate aria-label="Contact form">
+            <div class="form-group">
+              <label for="full-name" class="form-label">
+                Full Name <span class="required" aria-hidden="true">*</span>
+                <span class="visually-hidden">(required)</span>
+              </label>
+              <input
+                type="text"
+                id="full-name"
+                name="name"
+                class="form-input"
+                autocomplete="name"
+                required
+                aria-required="true"
+                aria-describedby="name-error"
+                aria-invalid="false"
+                placeholder="Your full name"
+              >
+              <span id="name-error" class="form-error" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">
+                Email Address <span class="required" aria-hidden="true">*</span>
+                <span class="visually-hidden">(required)</span>
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-input"
+                autocomplete="email"
+                required
+                aria-required="true"
+                aria-describedby="email-error"
+                aria-invalid="false"
+                placeholder="you@example.com"
+              >
+              <span id="email-error" class="form-error" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">
+                Subject <span class="required" aria-hidden="true">*</span>
+                <span class="visually-hidden">(required)</span>
+              </label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                class="form-input"
+                required
+                aria-required="true"
+                aria-describedby="subject-error"
+                aria-invalid="false"
+                placeholder="What is this about?"
+              >
+              <span id="subject-error" class="form-error" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">
+                Message <span class="required" aria-hidden="true">*</span>
+                <span class="visually-hidden">(required)</span>
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                class="form-textarea"
+                required
+                aria-required="true"
+                aria-describedby="message-error"
+                aria-invalid="false"
+                placeholder="Write your message here..."
+              ></textarea>
+              <span id="message-error" class="form-error" role="alert"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">Paul Varghese</p>
+          <p class="footer-text">Web developer based in Thrissur, Kerala, India. Building accessible websites with attention to detail.</p>
+        </div>
+
+        <nav aria-label="Footer navigation">
+          <p class="footer-heading">Pages</p>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Thrissur, Kerala, India</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
