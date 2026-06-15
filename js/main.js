@@ -6,6 +6,41 @@
 (function () {
   "use strict";
 
+  /* --- Theme Toggle --- */
+  var themeToggle = document.getElementById("theme-toggle");
+
+  function getTheme() {
+    return document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
+  }
+
+  function setTheme(theme) {
+    if (theme === "dark") {
+      document.documentElement.setAttribute("data-theme", "dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.removeAttribute("data-theme");
+      localStorage.setItem("theme", "light");
+    }
+    updateThemeToggleUI();
+  }
+
+  function updateThemeToggleUI() {
+    if (!themeToggle) return;
+    var isDark = getTheme() === "dark";
+    themeToggle.setAttribute("aria-pressed", String(isDark));
+    themeToggle.setAttribute(
+      "aria-label",
+      isDark ? "Switch to light mode" : "Switch to dark mode"
+    );
+  }
+
+  if (themeToggle) {
+    updateThemeToggleUI();
+    themeToggle.addEventListener("click", function () {
+      setTheme(getTheme() === "dark" ? "light" : "dark");
+    });
+  }
+
   /* --- Mobile Navigation --- */
   const navToggle = document.querySelector(".nav-toggle");
   const siteNav = document.querySelector(".site-nav");
